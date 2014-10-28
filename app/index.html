@@ -14,6 +14,7 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <link rel="stylesheet" href="styles/ng-terminal.css">
   </head>
   <body ng-app="webappApp">
     <!--[if lt IE 7]>
@@ -26,15 +27,16 @@
         <ul class="nav nav-pills pull-right">
           <li class="active"><a ng-href="#">Home</a></li>
           <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#">Contact</a></li>
+          <li><a ng-href="#/ws">Portal</a></li>
         </ul>
-        <h3 class="text-muted">webapp</h3>
+        <h3 class="text-muted">Portal Cloud</h3>
       </div>
 
       <div ng-view=""></div>
 
       <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+
+        <p><a href="https://github.com/portalcloud">Github</a></p>
       </div>
     </div>
 
@@ -70,11 +72,13 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <!-- endbuild -->
+        <script src="scripts/terminal/controllers/terminal.js"></script>
+        <script src="scripts/ng-terminal/controllers/terminal.js"></script>
+        <script src="scripts/ng-terminal/directives/ng-terminal.js"></script>
 </body>
 </html>
