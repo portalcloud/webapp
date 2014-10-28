@@ -5,8 +5,6 @@
   		$scope.prompt.user('portalcloud');
   		$scope.prompt.path('/some/path/');
         var cmd = consoleInput[0];
-        console.log($scope.outputDelay);
-        console.log(cmd.command);
         $scope.$broadcast('terminal-output', { output: true, breakLine: true, text: ["wellcome to portalcloud"] });
 
 

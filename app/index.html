@@ -24,19 +24,22 @@
     <!-- Add your site or application content here -->
     <div class="container">
       <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#/ws">Portal</a></li>
-        </ul>
-        <h3 class="text-muted">Portal Cloud</h3>
+        <div class="container-center">
+          <ul class="nav nav-pills pull-right">
+            <li class="active"><a ng-href="#">Home</a></li>
+            <li><a ng-href="#/about">About</a></li>
+            <li><a ng-href="#/ws">Portal</a></li>
+          </ul>
+          <h3 class="text-muted">Portal Cloud</h3>
+        </div>
       </div>
 
       <div ng-view=""></div>
 
       <div class="footer">
-
-        <p><a href="https://github.com/portalcloud">Github</a></p>
+        <div class="container-center">
+          <p><a href="https://github.com/portalcloud">Github</a></p>
+        </div>
       </div>
     </div>
 
