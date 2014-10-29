@@ -1,6 +1,5 @@
 /* Space out content a bit */
 body {
-  color: #fff;
 }
 
 a {
@@ -36,10 +35,16 @@ a {
   max-width: 1100px;
 }
 
+.container-center .login{
+  max-width: 600px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
-.marketing,
 .footer {
+  color: #fff;
 }
 
 /* Custom page header */

@@ -29,12 +29,16 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
-      .when('/ws', {
-        templateUrl: 'views/ws.html',
-        controller: 'WsCtrl'
+      .when('/portal', {
+        templateUrl: 'views/portal.html',
+        controller: 'PortalCtrl'
       })
-      .when('/auth', {
-        templateUrl: 'views/user_auth.html',
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'MainCtrl'
+      })
+      .when('/signup', {
+        templateUrl: 'views/signup.html',
         controller: 'MainCtrl'
       })
       .otherwise({
