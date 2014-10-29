@@ -33,6 +33,10 @@ angular
         templateUrl: 'views/ws.html',
         controller: 'WsCtrl'
       })
+      .when('/auth', {
+        templateUrl: 'views/user_auth.html',
+        controller: 'MainCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

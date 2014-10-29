@@ -202,7 +202,7 @@
     });
        
     $scope.keypress= function (keyCode) {
-        if ($scope.commandLine.length < 80) {
+        if ($scope.commandLine.length < 180) {
             commandIndex = -1;
             $scope.commandLine += String.fromCharCode(keyCode);
             $scope.$$phase || $scope.$apply();
